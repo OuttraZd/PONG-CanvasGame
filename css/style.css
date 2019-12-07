@@ -11,7 +11,7 @@ body {
 
 .header {
   width: 100%;
-  height: 45px;
+  height: 50px;
   border-bottom: solid 1px #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,5 +27,112 @@ body {
 .header__language {
   width: 100px;
   height: auto;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 95vh;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.main-container__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-container__content--name {
+  font-family: "main.woff2";
+  color: #fff;
+  font-size: 165px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.main-container__content--engine {
+  color: #fff;
+  font-family: "main.woff2";
+  margin: 0;
+  font-size: 35px;
+  text-transform: uppercase;
+  word-spacing: -12px;
+}
+
+.main-container__content--play {
+  position: relative;
+  top: 50px;
+  background: none;
+  text-transform: uppercase;
+  color: #fff;
+  outline: none;
+  border: 3px solid #fff;
+  font-family: "main.woff2";
+  width: 180px;
+  height: 45px;
+  font-size: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width: 450px) {
+  .main-container__content--name {
+    font-size: 130px;
+  }
+  .main-container__content--engine {
+    font-size: 28px;
+  }
+  .main-container__content--play {
+    width: 170px;
+    height: 40px;
+    font-size: 26px;
+    top: 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  .main-container__content--name {
+    font-size: 115px;
+  }
+  .main-container__content--engine {
+    font-size: 24px;
+  }
+  .main-container__content--play {
+    width: 140px;
+    height: 30px;
+    font-size: 22px;
+    top: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

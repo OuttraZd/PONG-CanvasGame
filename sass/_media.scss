@@ -1,0 +1,37 @@
+@media (max-width:450px) {
+    .main-container {
+        &__content {
+            &--name {
+                font-size:130px;
+            }
+            &--engine {
+                font-size:28px;
+            }
+            &--play {
+                width:170px;
+                height:40px;
+                font-size:26px;
+                top:30px;
+            }
+        }
+    }
+}
+
+@media (max-width:360px) {
+    .main-container {
+        &__content {
+            &--name {
+                font-size:115px;
+            }
+            &--engine {
+                font-size:24px;
+            }
+            &--play {
+                width:140px;
+                height:30px;
+                font-size:22px;
+                top:30px;
+            }
+        }
+    }
+}
