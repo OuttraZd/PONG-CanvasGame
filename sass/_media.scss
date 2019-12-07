@@ -18,14 +18,7 @@
     .information {
         width:350px;
         &__container {
-            margin-top:5px;
-        }
-        &__name {
-            margin-top:70px;
-            font-size:30px;
-        }
-        &__autors {
-            font-size:26px;
+            bottom: 40px;
         }
     }
 }
@@ -49,16 +42,6 @@
     }
     .information {
         width:480px;
-        &__container {
-            margin-top:5px;
-        }
-        &__name {
-            margin-top:70px;
-            font-size:30px;
-        }
-        &__autors {
-            font-size:26px;
-        }
     }
 }
 
@@ -86,7 +69,6 @@
         }
         &__name {
             margin-top:70px;
-            font-size:30px;
         }
         &__autors {
             font-size:26px;
@@ -114,14 +96,14 @@
     .information {
         width:500px;
         &__container {
-            margin-bottom:60px;
+            margin-bottom: 60px;
         }
-        &__name {
+        &--name {
             font-size:35px;
             margin-bottom:25px;
         }
-        &__autors {
-            font-size:30px;
+        &--autors {
+            font-size:35px;
         }
     }
 }
