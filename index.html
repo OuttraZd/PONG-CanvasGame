@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/brands.min.css" integrity="sha256-UZFVAO0Fn854ajzdWnJ2Oze6k1X4LNqE2RJPW3MBfq8=" crossorigin="anonymous" />
     <title>PONG - Canvas Game</title>
 </head>
 <body>
@@ -12,13 +13,27 @@
         <div class="header__language">
             <img src="img/eng.png">
         </div>
+        <div class="header__toggle">
+            <!--PRZEŁĄCZNIK-->
+        </div>
     </header>
+
+    <section class="information">
+        <h3 class="information__name">Informacje</h3>
+        <div class="information__container">
+            <div class="information__autors">Gra napisana przez Samuraj Programowania</div>
+            <div class="information__autors">Landing Page stworzony przez OuttraZd</div>
+            <div class="information__autors">Kod gry zainicjalizowany przez OuttraZd</div>
+        </div>
+    </section>
 
     <section class="main-container">
         <div class="main-container__content">
             <h1 class="main-container__content--name">Pong</h1>
             <h2 class="main-container__content--engine">Canvas + JavaScript</h2>
-            <button class="main-container__content--play">Zagraj</button>
+            <a href="game.html">
+                <button class="main-container__content--play">Zagraj</button>
+            </a>
         </div>
     </section>
 </body>

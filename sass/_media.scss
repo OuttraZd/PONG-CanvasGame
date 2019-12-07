@@ -1,11 +1,11 @@
-@media (max-width:450px) {
+@media (min-width:420px) {
     .main-container {
         &__content {
             &--name {
-                font-size:130px;
+                font-size:140px;
             }
             &--engine {
-                font-size:28px;
+                font-size:30px;
             }
             &--play {
                 width:170px;
@@ -15,23 +15,113 @@
             }
         }
     }
+    .information {
+        width:350px;
+        &__container {
+            margin-top:5px;
+        }
+        &__name {
+            margin-top:70px;
+            font-size:30px;
+        }
+        &__autors {
+            font-size:26px;
+        }
+    }
 }
 
-@media (max-width:360px) {
+@media (min-width:550px) {
     .main-container {
         &__content {
             &--name {
-                font-size:115px;
+                font-size:155px;
             }
             &--engine {
-                font-size:24px;
+                font-size:33px;
             }
             &--play {
-                width:140px;
-                height:30px;
-                font-size:22px;
-                top:30px;
+                width:170px;
+                height:45px;
+                font-size:26px;
+                top:50px;
             }
+        }
+    }
+    .information {
+        width:480px;
+        &__container {
+            margin-top:5px;
+        }
+        &__name {
+            margin-top:70px;
+            font-size:30px;
+        }
+        &__autors {
+            font-size:26px;
+        }
+    }
+}
+
+@media (min-width:720px) {
+    .main-container {
+        &__content {
+            &--name {
+                font-size:172px;
+            }
+            &--engine {
+                font-size:36px;
+            }
+            &--play {
+                width:175px;
+                height:50px;
+                font-size:27px;
+                top:50px;
+            }
+        }
+    }
+    .information {
+        width:480px;
+        &__container {
+            margin-top:5px;
+        }
+        &__name {
+            margin-top:70px;
+            font-size:30px;
+        }
+        &__autors {
+            font-size:26px;
+        }
+    }
+}
+
+@media (min-width:1366px) {
+    .main-container {
+        &__content {
+            &--name {
+                font-size:292px;
+            }
+            &--engine {
+                font-size:56px;
+            }
+            &--play {
+                width:185px;
+                height:55px;
+                font-size:29px;
+                top:50px;
+            }
+        }
+    }
+    .information {
+        width:500px;
+        &__container {
+            margin-bottom:60px;
+        }
+        &__name {
+            font-size:35px;
+            margin-bottom:25px;
+        }
+        &__autors {
+            font-size:30px;
         }
     }
 }

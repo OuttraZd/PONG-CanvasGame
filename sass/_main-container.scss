@@ -8,7 +8,7 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    height:95vh;
+    height:80vh;
     width:100%;
     position: absolute;
     top: 50%;
@@ -34,7 +34,7 @@
         &--name {
             font-family:"main.woff2";
             color:$white;
-            font-size:165px;
+            font-size:115px;
             margin:0;
             text-transform: uppercase;
         }
@@ -42,22 +42,22 @@
             color:$white;
             font-family:"main.woff2";
             margin:0;
-            font-size: 35px;
+            font-size: 24px;
             text-transform: uppercase;
             word-spacing: -12px;
         }
         &--play {
             position: relative;
-            top:50px;
+            top:30px;
             background:none;
             text-transform: uppercase;
             color:$white;
             outline:none;
             border:3px solid $white;
             font-family:"main.woff2";
-            width:180px;
-            height:45px;
-            font-size: 28px;
+            width:140px;
+            height:40px;
+            font-size:22px;
             display:-webkit-box;
             display:-ms-flexbox;
             display:flex;
@@ -67,6 +67,15 @@
             -webkit-box-pack: center;
             -ms-flex-pack: center;
             justify-content: center;
+            -webkit-transition: -webkit-transform ease .3s;
+            transition: -webkit-transform ease .3s;
+            transition: transform ease .3s;
+            transition: transform ease .3s, -webkit-transform ease .3s;
+            cursor:pointer;
+            &:hover {
+                -webkit-transform:scale(1.2);
+                transform:scale(1.1);
+            }
         }
     }
 }
