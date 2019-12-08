@@ -8,7 +8,7 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    height:80vh;
+    height:0;
     width:100%;
     position: absolute;
     top: 50%;
@@ -75,6 +75,14 @@
             &:hover {
                 -webkit-transform:scale(1.2);
                 transform:scale(1.1);
+            }
+            a,
+            a:visited,
+            a:focus {
+                text-decoration: none;
+                color: #fff;
+                height: 23px;
+                width: 160px;
             }
         }
     }

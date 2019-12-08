@@ -12,13 +12,26 @@
                 height:40px;
                 font-size:26px;
                 top:30px;
+                a,
+                a:visited,
+                a:focus {
+                    height:25px;
+                }
             }
         }
     }
     .information {
         width:350px;
         &__container {
-            bottom: 40px;
+            margin-top:5px;
+        }
+        &__name {
+            margin-top:55px;
+            font-size:30px;
+        }
+        &__autors {
+            font-size:25px;
+            height:90px;
         }
     }
 }
@@ -42,6 +55,16 @@
     }
     .information {
         width:480px;
+        &__container {
+            margin-top:10px;
+        }
+        &__name {
+            margin-top:55px;
+            font-size:30px;
+        }
+        &__autors {
+            font-size:26px;
+        }
     }
 }
 
@@ -59,16 +82,22 @@
                 height:50px;
                 font-size:27px;
                 top:50px;
+                a,
+                a:visited,
+                a:focus {
+                    height:29px;
+                }
             }
         }
     }
     .information {
         width:480px;
         &__container {
-            margin-top:5px;
+            margin-top:10px;
         }
         &__name {
-            margin-top:70px;
+            margin-top:50px;
+            font-size:30px;
         }
         &__autors {
             font-size:26px;
@@ -93,17 +122,27 @@
             }
         }
     }
+    .header {
+        &__language {
+            margin-left:30px;
+        }
+        &__toggle {
+            &--size {
+                margin-left:-30px;
+            }
+        }
+    }
     .information {
         width:500px;
         &__container {
-            margin-bottom: 60px;
+            margin-bottom:60px;
         }
-        &--name {
+        &__name {
             font-size:35px;
-            margin-bottom:25px;
+            margin-top:65px;
         }
-        &--autors {
-            font-size:35px;
+        &__autors {
+            font-size:30px;
         }
     }
 }
