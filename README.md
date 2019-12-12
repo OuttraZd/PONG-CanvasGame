@@ -10,6 +10,7 @@
 #### Time 
 
 ```
-Landing Page: 7.12.2019 - in progress
+Landing Page: December 2019 (few days)
+Game implementation: --- 
 ```
 
