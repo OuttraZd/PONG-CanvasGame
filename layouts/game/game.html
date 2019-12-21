@@ -1,1 +1,104 @@
-<style>body{color:red;background:#000;display:flex;justify-content:center;align-items:center;flex-direction:column;}button{width:300px;height:50px;}</style><h1>pong canvas javascript</h1><button><a href="../../index.html">back</a></button>
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1">
+	<title>PONG - Canvas + JS game</title>
+
+	<style>
+
+		body {
+			margin:0;
+			padding:0;
+			background-color:#303030;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			height:100vh;
+		}
+
+		canvas {
+			border:solid 2px #fff;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<canvas></canvas>
+
+<script>
+
+	const canvas = document.querySelector('canvas');
+	const ctx = canvas.getContext('2d');
+
+	canvas.width = 1000;
+	canvas.height = 500;
+
+	const cw = canvas.width;
+	const ch = canvas.height;
+
+	const ballSize = 20;
+	let ballX = cw/2-ballSize/2;
+	let ballY = ch/2-ballSize/2;
+
+	const paddleHeight = 100;
+	const paddleWidth = 20;
+
+	const playerX = 70;
+	const aiX = 910;
+
+	let playerY = 200;
+	let aiY = 200;
+
+	const lineWidth = 6;
+	const lineHeight = 16;
+
+	let ballSpeedX = 1;
+	let ballSpeedY = 1;
+
+	function table() {
+		//table
+		ctx.fillStyle = '#000';
+		ctx.fillRect(0, 0, cw, ch);
+		//line
+		for (let linePosition = 20; linePosition < ch;
+		linePosition +=30) {
+			ctx.fillStyle = 'gray';
+			ctx.fillRect(cw/2-lineWidth/2, linePosition-lineHeight/2, lineWidth, lineHeight)
+		}
+	}
+
+	function ball() {
+		ctx.fillStyle = '#fff';
+		ctx.fillRect(ballX, ballY, ballSize, ballSize);
+
+		ballX += ballSpeedX
+		ballY += ballSpeedY
+	}
+
+	function player() {
+		ctx.fillStyle = '#7FFF00';
+		ctx.fillRect(playerX, playerY, paddleWidth, paddleHeight);
+	}
+
+	function ai() {
+		ctx.fillStyle = 'yellow';
+		ctx.fillRect(aiX, aiY, paddleWidth, paddleHeight);
+	}
+	function game() {
+		table()
+		ball()
+		player()
+		ai()
+	}
+
+	setInterval(game, 1000/60)
+
+</script>
+
+</body>
+</html>
