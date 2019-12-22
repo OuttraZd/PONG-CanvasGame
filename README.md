@@ -1,4 +1,4 @@
-## PONG CanvasGame (Landing Page and PONG game)
+## PONG CanvasGame (Landing Page and PONG game for javascript practice)
 
 ### Technology used
 * HTML
