@@ -1,4 +1,5 @@
 ## PONG CanvasGame (Landing Page and PONG game for javascript practice)
+### not supported on touch screens
 
 ### Technology used
 * HTML
