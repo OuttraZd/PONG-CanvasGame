@@ -32,7 +32,7 @@
         -ms-flex-align: center;
         align-items: center;
         &--name {
-            font-family:"main.woff2";
+            font-family:"main";
             color:$white;
             font-size:115px;
             margin:0;
@@ -40,7 +40,7 @@
         }
         &--engine {
             color:$white;
-            font-family:"main.woff2";
+            font-family:"main";
             margin:0;
             font-size: 24px;
             text-transform: uppercase;
@@ -54,7 +54,7 @@
             color:$white;
             outline:none;
             border:3px solid $white;
-            font-family:"main.woff2";
+            font-family:"main";
             width:140px;
             height:40px;
             font-size:22px;

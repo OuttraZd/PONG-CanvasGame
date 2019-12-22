@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-
 <html lang="pl">
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1">
 	<title>PONG - Canvas + JS game</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
 	<style>
+
 		body {
 			margin: 0;
 			padding: 0;
-			background-color: #303030;
+			background: linear-gradient(0deg, rgba(0,16,22,1) 0%, rgba(32,32,32,1) 67%);
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -20,12 +20,48 @@
 
 		canvas {
 			border: solid 2px #fff;
+			display:none;
 		}
+
+		.unavailable {
+			font-size:15px;
+			text-align: center;
+			color: #fff;
+			font-family: 'Lato', sans-serif;
+			padding: 0 15px;
+		}
+
+		.unavailable__en {
+			bottom:5px;
+			position: relative;
+		}
+
+		.unavailable__bars {
+			font-size:20px;
+			font-weight:bolder;
+		}
+
+		@media (min-width:1200px) {
+			canvas {
+				display: block;
+			}
+
+			.unavailable {
+				display: none;
+			}
+		}
+
 	</style>
 
 </head>
 
 <body>
+
+	<section class="unavailable">
+		<h1 class="unavailable__pl">Niestety, gra nie działa na twoim urządrzeniu</h1>
+		<div class="unavailable__bars">//</div>
+		<h2 class="unavailable__en">Unfortunately, the game does not work on your device</h2>
+	</section>
 
 	<canvas></canvas>
 

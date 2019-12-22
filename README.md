@@ -1,5 +1,4 @@
-## PONG CanvasGame (Landing Page and PONG game for javascript practice)
-### not supported on touch screens
+## PONG CanvasGame (Landing Page and PONG game)
 
 ### Technology used
 * HTML
@@ -12,6 +11,6 @@
 
 ```
 Landing Page: December 2019 (few days)
-Game implementation: some hours 
+Game implementation: --- 
 ```
 
