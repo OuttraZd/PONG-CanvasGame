@@ -11,6 +11,6 @@
 
 ```
 Landing Page: December 2019 (few days)
-Game implementation: --- 
+Game implementation: some hours 
 ```
 
