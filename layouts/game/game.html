@@ -1,17 +1,17 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pl">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1">
 	<title>PONG - Canvas + JS game</title>
-	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
 
 	<style>
 
 		body {
 			margin: 0;
 			padding: 0;
-			background: linear-gradient(0deg, rgba(0,16,22,1) 0%, rgba(32,32,32,1) 67%);
+			background-color:#202020;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -24,11 +24,11 @@
 		}
 
 		.unavailable {
-			font-size:15px;
+			font-size:14px;
 			text-align: center;
 			color: #fff;
-			font-family: 'Lato', sans-serif;
-			padding: 0 15px;
+			font-family: 'Courier Prime', monospace;
+			padding: 0 25px;
 		}
 
 		.unavailable__en {
@@ -39,6 +39,15 @@
 		.unavailable__bars {
 			font-size:20px;
 			font-weight:bolder;
+		}
+		
+		.man {
+			position:absolute;
+			bottom:0;
+			display:flex;
+			justify-content:center;
+			width:280px;
+			height:220px;
 		}
 
 		@media (min-width:1200px) {
