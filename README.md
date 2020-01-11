@@ -9,8 +9,5 @@
 
 #### Time 
 
-```
-December 2019 (few days)
-
-```
+```December 2019 (few days)```
 
