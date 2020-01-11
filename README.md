@@ -10,7 +10,7 @@
 #### Time 
 
 ```
-Landing Page: December 2019 (few days)
-Game implementation: --- 
+December 2019 (few days)
+
 ```
 
